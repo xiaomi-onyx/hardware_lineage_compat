@@ -200,9 +200,11 @@ cc_library_shared {
     name: "libcodec2_shim",
     shared_libs: [
         "libcodec2_vndk",
+        "libcodec2_hidl@1.0",
     ],
     srcs: [
         "libcodec2/C2Fence.cpp",
+        "libcodec2/types.cpp",
     ],
     vendor: true,
 }
